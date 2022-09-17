@@ -25,6 +25,10 @@ header .logo img {
     padding: 10px 0;
 }
 
+header nav {
+    margin-left: auto;
+}
+
 header nav ul {
     display: flex;
     list-style: none;
@@ -38,13 +42,18 @@ header nav ul li {
 }
 
 .products-list {
-    display: flex;
-    flex-wrap: wrap;
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
 }
 
 .products-list .product {
-    width: 25%;
-    margin-bottom: 45px;
+    position: relative;
+    border: 2px solid #aaa;
+    padding: 15px;
+}
+
+.products-list .product .product-title {
+    font-size: 16px;
 }
 
 .products-list .product img {
@@ -52,7 +61,7 @@ header nav ul li {
 }
 
 .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -64,6 +73,81 @@ footer {
 }
 
 footer .container {
+    height: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
+.slider {
+    margin: 15px 0;
+}
+
+.slider img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.price {
+    font-size: 18px;
+}
+
+.discount {
+    background-color: #f8dc07;
+    color: #333;
+    padding: 5px;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.triangle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 70px 70px 0 0;
+    border-color: red transparent transparent transparent;
+}
+
+.discount-percent {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.btn-cart {
+    width: 100%;
+    background-color: rgb(42, 63, 108);
+    color: #fff;
+    border-radius: 4px;
+}
+
+.btn.btn-cart:hover {
+    background-color: rgb(19, 24, 47);
+    color: #fff;
+}
+
+/*@media screen and (max-width: 768px) {*/
+/*    .products-list .product {*/
+/*        width: 50%;*/
+/*    }*/
+/*}*/
+
+/*@media screen and (max-width: 465px) {*/
+/*    .products-list .product {*/
+/*        width: 100%;*/
+/*    }*/
+
+/*    header .logo img {*/
+/*        width: 100px;*/
+/*    }*/
+
+/*    header nav ul li {*/
+/*        padding: 15px 5px;*/
+/*    }*/
+/*}*/
