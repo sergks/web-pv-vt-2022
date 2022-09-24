@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+   <div class="wrapper">
+       <header>
+           <nav class="navbar navbar-expand-lg">
+               <div class="container">
+                   <a class="navbar-brand" href="#">
+                       <div class="logo">
+                           <img src="https://trial-sport.ru/img/trial_logo.svg">
+                       </div>
+                   </a>
+                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                       <span class="navbar-toggler-icon"></span>
+                   </button>
+                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                           <li class="nav-item">
+                               <a class="nav-link" href="catalog.html">Каталог</a>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link" href="#">О компании</a>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link" href="#">О нас</a>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link" href="login.html">Войти</a>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+           </nav>
+       </header>
+       <main class="container">
+           <h1>Каталог товаров</h1>
+
+           <hr>
+
+           <div class="row mt-2">
+               <div class="col-md-2">
+                   <ul class="list-unstyled filters">
+                       <li>
+                           <div>Бренд</div>
+                           <ul class="list-unstyled">
+                               <li>
+                                   <input type="checkbox"> Cannondale
+                               </li>
+                               <li>
+                                   <input type="checkbox"> Corratec
+                               </li>
+                               <li>
+                                   <input type="checkbox"> GT
+                               </li>
+                               <li>
+                                   <input type="checkbox"> Jamis
+                               </li>
+                           </ul>
+                       </li>
+                       <li>
+                           <div>Возраст</div>
+                           <ul class="list-unstyled">
+                               <li>
+                                   <input type="checkbox"> для взрослых
+                               </li>
+                               <li>
+                                   <input type="checkbox"> для подростков
+                               </li>
+                           </ul>
+                       </li>
+                       <li>
+                           <div>Сезон</div>
+                           <ul class="list-unstyled">
+                               <li>
+                                   <input type="checkbox"> 2022
+                               </li>
+                               <li>
+                                   <input type="checkbox"> 2021
+                               </li>
+                               <li>
+                                   <input type="checkbox"> 2020
+                               </li>
+                           </ul>
+                       </li>
+                       <li>Тип</li>
+                       <li>Назначение</li>
+                   </ul>
+               </div>
+               <div class="col-md-10">
+                   <div class="sorts d-flex justify-content-between">
+                       <div>
+                           <select>
+                               <option>Сортировать</option>
+                               <option>по названию</option>
+                               <option>по бренду</option>
+                               <option>по сезону</option>
+                           </select>
+                       </div>
+                       <div class="sorts-checkbox">
+                           <div class="sorts-item">
+                               <label>
+                                   <input type="checkbox"> в наличии
+                               </label>
+                           </div>
+                           <div class="sorts-item">
+                              <label>
+                                  <input type="checkbox"> новинки
+                              </label>
+                           </div>
+                       </div>
+                   </div>
+                   <section class="products-list row">
+                       <div class="col-md-6 col-lg-3 mb-5">
+                           <div class="product ">
+                               <div>
+                                   <img src="https://trial-sport.ru/images/catalog/500/1v3a5841_2642979.jpg" />
+                               </div>
+                               <div class="product-title"><b>Горный велосипед Outleap RIOT EXPERT</b></div>
+                               <br>
+                               <div>Бренд: Outleap</div>
+                               <div>Сезон: 2022</div>
+                               <br>
+                               <div>
+                                   <span class="price">45 890 ₽</span>
+                                   <span class="discount">22 945 ₽</span>
+                               </div>
+                               <div class="triangle"></div>
+                               <div class="discount-percent">50%</div>
+                               <br>
+                               <button class="btn btn-cart">В корзину</button>
+                           </div>
+                       </div>
+                       <div class="col-md-6 col-lg-3 mb-5">
+                           <div class="product ">
+                               <div>
+                                   <img src="https://trial-sport.ru/images/catalog/500/1v3a5841_2642979.jpg" />
+                               </div>
+                               <div class="product-title"><b>Горный велосипед Outleap RIOT EXPERT</b></div>
+                               <br>
+                               <div>Бренд: Outleap</div>
+                               <div>Сезон: 2022</div>
+                               <br>
+                               <div>
+                                   <span class="price">45 890 ₽</span>
+                                   <span class="discount">22 945 ₽</span>
+                               </div>
+                               <div class="triangle"></div>
+                               <div class="discount-percent">50%</div>
+                               <br>
+                               <button class="btn btn-cart">В корзину</button>
+                           </div>
+                       </div>
+                       <div class="col-md-6 col-lg-3 mb-5">
+                           <div class="product ">
+                               <div>
+                                   <img src="https://trial-sport.ru/images/catalog/500/1v3a5841_2642979.jpg" />
+                               </div>
+                               <div class="product-title"><b>Горный велосипед Outleap RIOT EXPERT</b></div>
+                               <br>
+                               <div>Бренд: Outleap</div>
+                               <div>Сезон: 2022</div>
+                               <br>
+                               <div>
+                                   <span class="price">45 890 ₽</span>
+                                   <span class="discount">22 945 ₽</span>
+                               </div>
+                               <div class="triangle"></div>
+                               <div class="discount-percent">50%</div>
+                               <br>
+                               <button class="btn btn-cart">В корзину</button>
+                           </div>
+                       </div>
+                       <div class="col-md-6 col-lg-3 mb-5">
+                           <div class="product ">
+                               <div>
+                                   <img src="https://trial-sport.ru/images/catalog/500/1v3a5841_2642979.jpg" />
+                               </div>
+                               <div class="product-title"><b>Горный велосипед Outleap RIOT EXPERT</b></div>
+                               <br>
+                               <div>Бренд: Outleap</div>
+                               <div>Сезон: 2022</div>
+                               <br>
+                               <div>
+                                   <span class="price">45 890 ₽</span>
+                                   <span class="discount">22 945 ₽</span>
+                               </div>
+                               <div class="triangle"></div>
+                               <div class="discount-percent">50%</div>
+                               <br>
+                               <button class="btn btn-cart">В корзину</button>
+                           </div>
+                       </div>
+                       <div class="col-md-6 col-lg-3 mb-5">
+                           <div class="product ">
+                               <div>
+                                   <img src="https://trial-sport.ru/images/catalog/500/1v3a5841_2642979.jpg" />
+                               </div>
+                               <div class="product-title"><b>Горный велосипед Outleap RIOT EXPERT</b></div>
+                               <br>
+                               <div>Бренд: Outleap</div>
+                               <div>Сезон: 2022</div>
+                               <br>
+                               <div>
+                                   <span class="price">45 890 ₽</span>
+                                   <span class="discount">22 945 ₽</span>
+                               </div>
+                               <div class="triangle"></div>
+                               <div class="discount-percent">50%</div>
+                               <br>
+                               <button class="btn btn-cart">В корзину</button>
+                           </div>
+                       </div>
+                       <div class="col-md-6 col-lg-3 mb-5">
+                           <div class="product ">
+                               <div>
+                                   <img src="https://trial-sport.ru/images/catalog/500/1v3a5841_2642979.jpg" />
+                               </div>
+                               <div class="product-title"><b>Горный велосипед Outleap RIOT EXPERT</b></div>
+                               <br>
+                               <div>Бренд: Outleap</div>
+                               <div>Сезон: 2022</div>
+                               <br>
+                               <div>
+                                   <span class="price">45 890 ₽</span>
+                                   <span class="discount">22 945 ₽</span>
+                               </div>
+                               <div class="triangle"></div>
+                               <div class="discount-percent">50%</div>
+                               <br>
+                               <button class="btn btn-cart">В корзину</button>
+                           </div>
+                       </div>
+                       <div class="col-md-6 col-lg-3 mb-5">
+                           <div class="product ">
+                               <div>
+                                   <img src="https://trial-sport.ru/images/catalog/500/1v3a5841_2642979.jpg" />
+                               </div>
+                               <div class="product-title"><b>Горный велосипед Outleap RIOT EXPERT</b></div>
+                               <br>
+                               <div>Бренд: Outleap</div>
+                               <div>Сезон: 2022</div>
+                               <br>
+                               <div>
+                                   <span class="price">45 890 ₽</span>
+                                   <span class="discount">22 945 ₽</span>
+                               </div>
+                               <div class="triangle"></div>
+                               <div class="discount-percent">50%</div>
+                               <br>
+                               <button class="btn btn-cart">В корзину</button>
+                           </div>
+                       </div>
+                       <div class="col-md-6 col-lg-3 mb-5">
+                           <div class="product ">
+                               <div>
+                                   <img src="https://trial-sport.ru/images/catalog/500/1v3a5841_2642979.jpg" />
+                               </div>
+                               <div class="product-title"><b>Горный велосипед Outleap RIOT EXPERT</b></div>
+                               <br>
+                               <div>Бренд: Outleap</div>
+                               <div>Сезон: 2022</div>
+                               <br>
+                               <div>
+                                   <span class="price">45 890 ₽</span>
+                                   <span class="discount">22 945 ₽</span>
+                               </div>
+                               <div class="triangle"></div>
+                               <div class="discount-percent">50%</div>
+                               <br>
+                               <button class="btn btn-cart">В корзину</button>
+                           </div>
+                       </div>
+                       <div class="col-md-6 col-lg-3 mb-5">
+                           <div class="product ">
+                               <div>
+                                   <img src="https://trial-sport.ru/images/catalog/500/1v3a5841_2642979.jpg" />
+                               </div>
+                               <div class="product-title"><b>Горный велосипед Outleap RIOT EXPERT</b></div>
+                               <br>
+                               <div>Бренд: Outleap</div>
+                               <div>Сезон: 2022</div>
+                               <br>
+                               <div>
+                                   <span class="price">45 890 ₽</span>
+                                   <span class="discount">22 945 ₽</span>
+                               </div>
+                               <div class="triangle"></div>
+                               <div class="discount-percent">50%</div>
+                               <br>
+                               <button class="btn btn-cart">В корзину</button>
+                           </div>
+                       </div>
+                       <div class="col-md-6 col-lg-3 mb-5">
+                           <div class="product ">
+                               <div>
+                                   <img src="https://trial-sport.ru/images/catalog/500/1v3a5841_2642979.jpg" />
+                               </div>
+                               <div class="product-title"><b>Горный велосипед Outleap RIOT EXPERT</b></div>
+                               <br>
+                               <div>Бренд: Outleap</div>
+                               <div>Сезон: 2022</div>
+                               <br>
+                               <div>
+                                   <span class="price">45 890 ₽</span>
+                                   <span class="discount">22 945 ₽</span>
+                               </div>
+                               <div class="triangle"></div>
+                               <div class="discount-percent">50%</div>
+                               <br>
+                               <button class="btn btn-cart">В корзину</button>
+                           </div>
+                       </div>
+                       <div class="col-md-6 col-lg-3 mb-5">
+                           <div class="product ">
+                               <div>
+                                   <img src="https://trial-sport.ru/images/catalog/500/1v3a5841_2642979.jpg" />
+                               </div>
+                               <div class="product-title"><b>Горный велосипед Outleap RIOT EXPERT</b></div>
+                               <br>
+                               <div>Бренд: Outleap</div>
+                               <div>Сезон: 2022</div>
+                               <br>
+                               <div>
+                                   <span class="price">45 890 ₽</span>
+                                   <span class="discount">22 945 ₽</span>
+                               </div>
+                               <div class="triangle"></div>
+                               <div class="discount-percent">50%</div>
+                               <br>
+                               <button class="btn btn-cart">В корзину</button>
+                           </div>
+                       </div>
+                       <div class="col-md-6 col-lg-3 mb-5">
+                           <div class="product ">
+                               <div>
+                                   <img src="https://trial-sport.ru/images/catalog/500/1v3a5841_2642979.jpg" />
+                               </div>
+                               <div class="product-title"><b>Горный велосипед Outleap RIOT EXPERT</b></div>
+                               <br>
+                               <div>Бренд: Outleap</div>
+                               <div>Сезон: 2022</div>
+                               <br>
+                               <div>
+                                   <span class="price">45 890 ₽</span>
+                                   <span class="discount">22 945 ₽</span>
+                               </div>
+                               <div class="triangle"></div>
+                               <div class="discount-percent">50%</div>
+                               <br>
+                               <button class="btn btn-cart">В корзину</button>
+                           </div>
+                       </div>
+                   </section>
+               </div>
+           </div>
+       </main>
+   </div>
+
+    <footer>
+        <div class="container">
+            <div>&copy; БГТУ, 2022</div>
+            <div>+7(000)000-00-00</div>
+        </div>
+    </footer>
+</body>
+</html>

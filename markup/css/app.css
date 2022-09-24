@@ -11,7 +11,23 @@ html, body {
 
 header {
     background-color: rgb(42, 63, 108);
-    padding: 0 15px;
+}
+
+nav.navbar {
+    background-color: rgb(42, 63, 108);
+    padding: 0;
+}
+
+nav .nav-link {
+    color: #fff;
+}
+
+nav .navbar-toggler-icon {
+
+}
+
+nav .nav-link:hover {
+    color: #ddd;
 }
 
 header .container {
@@ -22,7 +38,6 @@ header .container {
 
 header .logo img {
     width: 200px;
-    padding: 10px 0;
 }
 
 header nav {
@@ -48,7 +63,7 @@ header nav ul li {
 
 .products-list .product {
     position: relative;
-    border: 2px solid #aaa;
+    border: 1px solid #ddd;
     padding: 15px;
 }
 
@@ -132,22 +147,55 @@ footer .container {
     color: #fff;
 }
 
-/*@media screen and (max-width: 768px) {*/
-/*    .products-list .product {*/
-/*        width: 50%;*/
-/*    }*/
-/*}*/
+main {
+    padding-top: 15px;
+}
 
-/*@media screen and (max-width: 465px) {*/
-/*    .products-list .product {*/
-/*        width: 100%;*/
-/*    }*/
+.filters li {
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    font-weight: bold;
+    transition: 0.5s;
+}
 
-/*    header .logo img {*/
-/*        width: 100px;*/
-/*    }*/
+.filters li:first-child {
+    border-top: none;
+    padding-top: 0;
+}
 
-/*    header nav ul li {*/
-/*        padding: 15px 5px;*/
-/*    }*/
-/*}*/
+.filters li ul {
+    margin-top: 5px;
+}
+
+.filters li ul li {
+    font-weight: normal;
+    border-top: none;
+    padding: 2px 0;
+}
+
+.sorts {
+    padding-bottom: 20px;
+}
+
+.sorts .sorts-checkbox {
+    display: flex;
+}
+
+.sorts .sorts-checkbox .sorts-item {
+    margin-left: 15px;
+}
+
+.sorts select {
+    padding: 0 15px;
+}
+
+.login-form {
+    background-color: #ddd;
+    padding: 25px;
+    max-width: 400px;
+    margin: 25px auto;
+}
+
+.login-form .errors {
+    color: red;
+}
