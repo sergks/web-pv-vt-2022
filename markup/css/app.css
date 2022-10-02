@@ -208,4 +208,5 @@ main {
     width: 100%;
     background-color: #ecce00;
     color: #333;
+    transition: 2s;
 }
