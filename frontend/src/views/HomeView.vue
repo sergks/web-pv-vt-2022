@@ -1,46 +1,32 @@
 <template>
   <div class="home">
-    <ProductCard
-        :product="item"
-        v-for="item in items">
-    </ProductCard>
+
+    <SliderList></SliderList>
+
+    <section class="products-list row">
+      <div class="col-md-6 col-lg-3 mb-5">
+        <ProductCard></ProductCard>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-5">
+        <ProductCard></ProductCard>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-5">
+        <ProductCard></ProductCard>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-5">
+        <ProductCard></ProductCard>
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-import ProductCard from "@/components/Product/ProductCard";
 
+import ProductCard from "@/components/Product/ProductCard";
+import SliderList from "@/components/Slider/SliderList";
 export default {
   name: 'HomeView',
-  data() {
-    return {
-      items: [
-        {
-          id: 1,
-          name: 'Товар 1'
-        },
-        {
-          id: 2,
-          name: 'Товар 2'
-        },
-        {
-          id: 3,
-          name: 'Товар 3'
-        }
-      ]
-    }
-  },
-  components: {
-    HelloWorld,
-    ProductCard
-  },
-  methods: {
-    click() {
-
-    }
-  }
+  components: {SliderList, ProductCard}
 }
 </script>
 
