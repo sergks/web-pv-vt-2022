@@ -1,14 +1,14 @@
 <template>
-  <form class="mt-4" method="post">
+  <form class="mt-4" method="post" @submit="login">
     <div class="mb-4">
       <div><label>Email</label></div>
-      <div><input type="email" class="w-100" name="email" required></div>
-      <div class="errors">Заполните "Email"</div>
+      <div><input type="email" class="w-100" name="email" required v-model="email"></div>
+      <div class="errors">{{ errors.email }}</div>
     </div>
     <div class="mb-4">
       <div><label>Пароль</label></div>
-      <div><input type="password" class="w-100" name="password" required></div>
-      <div class="errors">Заполните "Пароль"</div>
+      <div><input type="password" class="w-100" name="password" required v-model="password"></div>
+      <div class="errors">{{ errors.password }}</div>
     </div>
     <div class="mb-4">
       <button type="submit" class="btn btn-yellow">Войти</button>
@@ -18,7 +18,37 @@
 
 <script>
 export default {
-  name: "LoginForm"
+  name: "LoginForm",
+  data() {
+    return {
+      email: '',
+      password: '',
+      errors: {
+        email: '',
+        password: ''
+      }
+    }
+  },
+  methods: {
+    login(event) {
+      this.validate()
+      event.preventDefault()
+    },
+
+    validate() {
+      for (let errorsKey in this.errors) {
+        this.errors[errorsKey] = ''
+      }
+
+      if (this.email.trim().length === 0) {
+        this.errors.email = 'Заполните Email.'
+      }
+
+      if (this.password.trim().length === 0) {
+        this.errors.password = 'Заполните Пароль.'
+      }
+    }
+  }
 }
 </script>
 

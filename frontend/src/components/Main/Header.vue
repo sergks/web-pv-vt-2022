@@ -18,7 +18,7 @@
             <li class="nav-item">
               <router-link class="nav-link" :to="{name: 'About'}">О компании</router-link>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" v-if="!isAuth">
               <router-link class="nav-link" :to="{name: 'Login'}">Войти</router-link>
             </li>
           </ul>
@@ -30,7 +30,12 @@
 
 <script>
 export default {
-  name: "Header"
+  name: "Header",
+  data() {
+    return {
+      isAuth: localStorage.getItem('user')
+    }
+  }
 }
 </script>
 
