@@ -5,13 +5,9 @@ services:
     build:
       context: .
       dockerfile: docker/Dockerfile
-    image: digitalocean.com/php
+    image: web-app
     container_name: web-app
     tty: true
-    environment:
-      SERVICE_NAME: app
-      SERVICE_TAGS: dev
-    working_dir: /var/www
     volumes:
       - ./:/var/www
       - ./php/local.ini:/usr/local/etc/php/conf.d/local.ini
