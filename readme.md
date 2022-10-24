@@ -25,3 +25,16 @@ docker-compose up -d
 ```
 docker stop $(docker ps -q)
 ```
+
+## Backend Laravel
+Настройка параметров проекта происходит в файле `.env`.
+
+Подключиться к контейнеру приложения
+```
+docker exec -ti web-app bash
+```
+
+После изменения конфигов или роутинга, необходимо выполнять сброс кэша, командой
+```
+php artisan optimize
+```
