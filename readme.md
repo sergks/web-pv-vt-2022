@@ -38,3 +38,8 @@ docker exec -ti web-app bash
 ```
 php artisan optimize
 ```
+
+Добавить права на запись в директорию `storage/logs`
+```
+chmod -R 777 storage/logs
+```
