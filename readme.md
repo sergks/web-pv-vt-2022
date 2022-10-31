@@ -58,7 +58,7 @@ DB_PASSWORD=pass321!
 
 Создаём миграции через команду
 ```
-php artisan migrate:create <название миграции>
+php artisan make:migration <название миграции>
 ```
 
 Выполняем миграции командой

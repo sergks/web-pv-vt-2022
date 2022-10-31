@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Product;
 
 use App\Http\Controllers\Controller;
+use App\Models\Product\Product;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class ProductController extends Controller
 {
@@ -12,18 +14,11 @@ class ProductController extends Controller
      */
     public function list()
     {
-        return [
-            [
-                'id' => 1,
-                'name' => 'Товар 1',
-                'price' => 990
-            ],
-            [
-                'id' => 1,
-                'name' => 'Товар 1',
-                'price' => 990
-            ]
-        ];
+        // SELECT * FROM products ORDER BY price DESC LIMIT 2
+        return Product::query()
+            ->orderBy('price', 'desc')
+            ->limit(2)
+            ->get();
     }
 
     /**
@@ -33,6 +28,15 @@ class ProductController extends Controller
      */
     public function info($id)
     {
-        return ['id' => $id];
+        // SELECT * FROM products WHERE id = 10
+        $product = Product::query()
+            ->where('id', $id)
+            ->first();
+
+        if ($product === null) {
+            throw new NotFoundHttpException('Товар не найден.');
+        }
+
+        return $product;
     }
 }
