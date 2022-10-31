@@ -19,6 +19,6 @@ use Illuminate\Support\Facades\Route;
 //});
 
 Route::prefix('products')->group(function () {
-    Route::get('list', [\App\Http\Controllers\ProductsController::class, 'list']);
-    Route::get('info/{id}', [\App\Http\Controllers\ProductsController::class, 'info']);
+    Route::get('list', [\App\Http\Controllers\Product\ProductController::class, 'list']);
+    Route::get('info/{id}', [\App\Http\Controllers\Product\ProductController::class, 'info']);
 });

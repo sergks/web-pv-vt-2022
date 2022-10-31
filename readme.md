@@ -43,3 +43,4 @@ php artisan optimize
 ```
 chmod -R 777 storage/logs
 ```
+
