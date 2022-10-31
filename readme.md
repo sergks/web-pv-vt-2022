@@ -44,3 +44,24 @@ php artisan optimize
 chmod -R 777 storage/logs
 ```
 
+
+## База данных
+Настройка конфига происходит в файле `.env` в следущих параметрах
+```
+DB_CONNECTION=mysql
+DB_HOST=db
+DB_PORT=3306
+DB_DATABASE=web
+DB_USERNAME=web
+DB_PASSWORD=pass321!
+```
+
+Создаём миграции через команду
+```
+php artisan migrate:create <название миграции>
+```
+
+Выполняем миграции командой
+```
+php artisan migrate
+```
