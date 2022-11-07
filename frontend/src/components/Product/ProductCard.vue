@@ -3,13 +3,13 @@
     <div>
       <img src="https://trial-sport.ru/images/catalog/500/1v3a5841_2642979.jpg" />
     </div>
-    <div class="product-title"><b>Горный велосипед Outleap RIOT EXPERT</b></div>
+    <div class="product-title"><b>{{ item.name }}</b></div>
     <br>
     <div>Бренд: Outleap</div>
     <div>Сезон: 2022</div>
     <br>
     <div>
-      <span class="price">45 890 ₽</span>
+      <span class="price">{{ item.price }} ₽</span>
       <span class="discount">22 945 ₽</span>
     </div>
     <div class="triangle"></div>
@@ -21,7 +21,8 @@
 
 <script>
 export default {
-  name: "ProductCard"
+    name: "ProductCard",
+    props: ["item"]
 }
 </script>
 

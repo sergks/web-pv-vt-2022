@@ -65,3 +65,8 @@ php artisan make:migration <название миграции>
 ```
 php artisan migrate
 ```
+
+Выполняем сидер
+```
+php artisan db:seed UsersSeeder
+```

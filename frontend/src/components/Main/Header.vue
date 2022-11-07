@@ -33,7 +33,7 @@ export default {
   name: "Header",
   data() {
     return {
-      isAuth: localStorage.getItem('user')
+      isAuth: localStorage.getItem('user') !== null
     }
   }
 }

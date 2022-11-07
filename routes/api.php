@@ -22,3 +22,7 @@ Route::prefix('products')->group(function () {
     Route::get('list', [\App\Http\Controllers\Product\ProductController::class, 'list']);
     Route::get('info/{id}', [\App\Http\Controllers\Product\ProductController::class, 'info']);
 });
+
+Route::prefix('user')->group(function () {
+    Route::post('login', [\App\Http\Controllers\User\UserController::class, 'login']);
+});

@@ -31,7 +31,15 @@ export default {
   },
   methods: {
     login(event) {
-      this.validate()
+        this.$http.post('/user/login', {email: this.email, password: this.password})
+            .then((response) => {
+                localStorage.setItem("user", JSON.stringify(response.data))
+                this.$router.push({name: "home"})
+            })
+            .catch((response) => {
+                this.errors.password = "Неверный логин или пароль."
+            })
+
       event.preventDefault()
     },
 

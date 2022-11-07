@@ -14,10 +14,10 @@ class ProductController extends Controller
      */
     public function list()
     {
-        // SELECT * FROM products ORDER BY price DESC LIMIT 2
+        // SELECT * FROM products ORDER BY price DESC LIMIT 4
         return Product::query()
             ->orderBy('price', 'desc')
-            ->limit(2)
+            ->limit(4)
             ->get();
     }
 
